@@ -1,0 +1,44 @@
+[
+    {
+    "id": 8,
+    "name":"Mr. Manish Pratap Singh", 
+    "designation": "Scientist",
+    "university": " DRDO Young Scientist Laboratory – CT Ministry of Defense ,Government of India.",
+    "image": "/images/kesavasamy.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Dr. Gang Li",
+    "designation": "Professor",
+    "university": "School of Information Technology, Deakin University, Australia",
+    "image": "/images/gangli.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Dr. Ebin Deni Raj",
+    "designation": "Associate Dean Academic Affairs, ACM Distinguished Speaker in Data Science",
+    "university": "Indian Institute of Information Technology, Kottayam",
+    "image": "/images/ebindeniraj.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Dr. Badrinath Ramamurthy",
+    "designation": "Professor",
+    "university": "Dept of CSE, IIIT Bangalore",
+    "image": "/images/badrinathramamurthy.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Dr. M. Prem Laxman Das",
+    "designation": "Sr. Scientist",
+    "university": "Society for Electronic Transactions and Security (SETS), CIT Campus, Chennai",
+    "image": "/images/premlaxmandas.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Meenakshi D’Souza",
+    "designation": "Professor, President, ACM India Council",
+    "university": "Department of Computer Science & Engineering, IIIT – Bangalore, ACM India",
+    "image": "/images/meenakshidsouza.jpg"
+  }
+]
