@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import '../components-css/CommitteStyles.css'
 
 export default function CommitteeList() {
   const [members, setMembers] = useState([]);
