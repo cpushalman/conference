@@ -60,7 +60,7 @@ return (
                                     }`}
                                 >
                                     <td className="px-6 py-4 font-bold text-gray-900 border-r border-gray-200">{detail.category}</td>
-                                    <td className="px-6 py-4 text-center font-bold text-blue-600 text-lg border-r border-gray-200">
+                                    <td className="px-6 py-4 text-left font-bold text-blue-600 text-lg border-r border-gray-200">
                                         {detail.value}
                                     </td>
                                 </tr>
