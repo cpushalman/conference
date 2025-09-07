@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex-1 flex items-center justify-center px-6">
           <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {}
-            <div className="space-y-6 pl-0 md:pl-16">
+            <div className="space-y-6 relative pl-0 md:pl-16">
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900  leading-tight">
                 International Conference on <br />
                 <span className="text-blue-700">
@@ -32,7 +32,7 @@ export default function Home() {
                 </span>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex gap-4 absolute -bottom-14 right-44">
                 <a
                   href="#register"
                   className="px-6 py-3 rounded-lg bg-blue-700 text-white font-semibold shadow hover:bg-blue-800 transition"

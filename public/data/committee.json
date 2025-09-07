@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. N. Rajesh Pillai",
+    "designation": "Director, Scientific Analysis Group, DRDO",
+    "university": "Ministry of Defense, Government of India",
+    "image": "/images/kesavasamy.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Dr. K. Kesavasamy",
+    "designation": "Former Scientist ISRO & Advisor IEEE",
+    "university": "IEEE Education Society, Kerala Section",
+    "image": "/images/kesavasamy.jpg"
+  }
+  
+]
