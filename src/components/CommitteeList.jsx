@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import '../components-css/CommitteStyles.css'
 
 export default function CommitteeList() {
   const [members, setMembers] = useState([]);
@@ -12,7 +13,7 @@ export default function CommitteeList() {
 
   return (
     <div className="container">
-      <h1>Committee Members</h1>
+      <h1 className="com-heading">Committee Members</h1>
 
       <div className="members-list">
         {members.map((member) => (

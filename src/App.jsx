@@ -29,9 +29,9 @@ gsap.ticker.lagSmoothing(0);
    <Payment/>
    <Bankdetails/>
    {/*just for checking the display guys*/}
-   <div className="App">
+  
       <CommitteeList />
-    </div>
+    
    </>
    
   )
