@@ -1,5 +1,6 @@
 import Home from "./components/Home"
 import Payment from "./components/Payment"
+import Bankdetails from "./components/Bankdetails"
 import { useEffect } from "react"
 import Lenis from "lenis"
 import gsap from "gsap"
@@ -25,6 +26,7 @@ gsap.ticker.lagSmoothing(0);
  
   return ( <><Home/>
    <Payment/>
+   <Bankdetails/>
    </>
    
   )
