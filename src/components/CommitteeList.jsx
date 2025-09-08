@@ -5,6 +5,7 @@ export default function CommitteeList() {
   const [members, setMembers] = useState([]);
   const [tech,setTech]=useState([]);
   const [pro,setPro]=useState([]);
+  const [org,setOrg]=useState([]);
 
   useEffect(() => {
     fetch("/data/committee.json")
@@ -25,6 +26,12 @@ export default function CommitteeList() {
       .then((data) => setPro(data))
       .catch((err) => console.error("Failed to load committee data:", err));
   }, []);
+  useEffect(() => {
+    fetch("/data/orgcommittee.json")
+      .then((res) => res.json())
+      .then((data) => setOrg(data))
+      .catch((err) => console.error("Failed to load committee data:", err));
+  }, []);
 
   return (
     <div className="container">
@@ -40,7 +47,7 @@ export default function CommitteeList() {
           </div>
         ))}
       </div><br />
-      <h1>ADVISORY COMMITTEE</h1>
+      <h1>TECHNICAL COMMITTEE</h1>
       <div className="members-list">
         {tech.map((member) => (
           <div key={member.id} className="member-card">
@@ -64,6 +71,15 @@ export default function CommitteeList() {
         ))}
       </div><br />
 
+      <h1>ORGANIZING COMMITTEE</h1>
+        <div className="committee-box">
+          {org.map((member) => (
+            <div key={member.id} className="committee-row">
+              <span>{member.name}</span>
+              <span>{member.designation}</span>
+            </div>
+          ))}
+        </div>
     </div>
   );
 }

@@ -52,3 +52,28 @@
   color: #555;
   margin: 5px 0;
 }
+
+.committee-box {
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.committee-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.committee-row:last-child {
+  border-bottom: none;
+}
+
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
