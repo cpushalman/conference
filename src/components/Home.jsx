@@ -4,7 +4,7 @@ import Countdown from "../ui/Countdown"
 export default function Home() {
   return (
     <>
-      <main id='home' className="bg-white min-h-screen flex flex-col">
+      <main id='home' className="bg-white  min-h-[72vh] flex flex-col">
         {}
         <div className="flex-1 flex items-center justify-center px-6">
           <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
