@@ -4,3 +4,59 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #0056b3;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.members-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.member-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
+  padding: 30px 20px 20px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-10px) scale(1.05) ;
+  box-shadow: 0 15px 25px rgba(0, 123, 255, 0.3);
+  filter: brightness(1.05);
+}
+
+.member-card img {
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 15px; /* Rounded rectangle shape */
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #007BFF;
+}
+
+.member-card h3 {
+  font-size: 1.2rem;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.member-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}

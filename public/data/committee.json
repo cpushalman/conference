@@ -12,6 +12,43 @@
     "designation": "Former Scientist ISRO & Advisor IEEE",
     "university": "IEEE Education Society, Kerala Section",
     "image": "/images/kesavasamy.jpg"
+  },
+  {
+    "id": 3,
+    "name":"Mr Chidambaran Kollengode", 
+    "designation": "Senior Director",
+    "university": " Engg at DataXu,Bangalore",
+    "image": "/images/kesavasamy.jpg"
+  },
+  {
+    "id": 4,
+    "name":"Dr.N.Subramanian", 
+    "designation": "Executive Director",
+    "university": " Society for Electronics Transactions and Security India",
+    "image": "/images/kesavasamy.jpg"
+  },
+  {
+    "id": 5,
+    "name":"Dr Venkatesh Babu", 
+    "designation": "Professor & Head",
+    "university": " Department of Computational and Data Sciences,Indian Institute of Science Bangalore",
+    "image": "/images/kesavasamy.jpg"
+  },
+  {
+    "id": 6,
+    "name":"Dr. Arun Rajkumar", 
+    "designation": "Core Member",
+    "university": " Department of Computer Science and Engineering, IIT Madras, Chennai",
+    "image": "/images/kesavasamy.jpg"
+  },
+  {
+    "id": 7,
+    "name":"Dr. Sathishkumar S", 
+    "designation": "Associate Professor",
+    "university": " AI in AG and Natural Resources,University of Tennessee,United States of America",
+    "image": "/images/kesavasamy.jpg"
   }
+  
+  
   
 ]
