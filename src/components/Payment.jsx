@@ -59,7 +59,7 @@ const importantDates = [
 
       <main className="max-w-6xl mx-auto px-6 py-12 space-y-16">
         {/* Important Dates Section */}
-        <section>
+        <section id="dates"><br />
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold text-blue-600 mb-4">IMPORTANT DATES</h2>
             <div className="w-24 h-1 bg-orange-400 mx-auto rounded-full"></div>
@@ -86,7 +86,7 @@ const importantDates = [
         </section>
 
         {/* Registration Fees Section */}
-        <section>
+        <section id="registration">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-blue-600 mb-4">
               The registration fee for the conference is as follows:

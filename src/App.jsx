@@ -1,6 +1,8 @@
 import Home from "./components/Home"
 import Payment from "./components/Payment"
 import Bankdetails from "./components/Bankdetails"
+import Header from "./components/Header"
+import Footer from "./components/Footer"    
 import { useEffect } from "react"
 import Lenis from "lenis"
 import gsap from "gsap"
@@ -25,13 +27,18 @@ gsap.ticker.lagSmoothing(0);
   }, [])
   
  
-  return ( <><Home/>
+  return ( <>
+  <Header/>
+  
+   <Home/>
    <Payment/>
    <Bankdetails/>
    {/*just for checking the display guys*/}
   
       <CommitteeList />
     
+
+   <Footer/>
    </>
    
   )
