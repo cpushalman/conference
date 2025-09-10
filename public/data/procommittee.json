@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Shri L Gopalakrishnan",
+    "designation": "Managing Trustee",
+    "university": "PSG & Son’s Charities",
+    "image": "/images/lgopalakrishnan.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Dr K Prakasan",
+    "designation": "Principal",
+    "university": "PSG College of Technology, Coimbatore",
+    "image": "/images/kprakasan.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dr G. Sudha Sadasivam",
+    "designation": "Professor & Head",
+    "university": "Department of Computer Science & Engineering, PSG College of Technology, Coimbatore-641004",
+    "image": "/images/gsudhasadasivam.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Dr V. Santhi",
+    "designation": "Professor",
+    "university": "Department of Computer Science & Engineering, PSG College of Technology, Coimbatore-641004",
+    "image": "/images/vsanthi.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Dr K. G. Saranya",
+    "designation": "Associate Professor",
+    "university": "Department of Computer Science & Engineering, PSG College of Technology, Coimbatore-641004",
+    "image": "/images/kgsaranya.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Dr R. Thirumahal",
+    "designation": "Assistant Professor (Sl.Gr)",
+    "university": "Department of Computer Science & Engineering, PSG College of Technology, Coimbatore-641004",
+    "image": "/images/rthirumahal.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Dr S. Vijayalakshmi",
+    "designation": "Assistant Professor (Sl.Gr)",
+    "university": "Department of Computer Science & Engineering, PSG College of Technology, Coimbatore-641004",
+    "image": "/images/svijayalakshmi.jpg"
+  }
+]
