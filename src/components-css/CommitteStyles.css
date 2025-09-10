@@ -1,3 +1,9 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7faff;
+  margin: 0;
+  padding: 0;
+}
 
 .container {
   padding: 50px;
@@ -5,11 +11,12 @@
   margin: auto;
 }
 
-.com-heading {
+h1 {
   text-align: center;
   color: #0056b3;
   font-size: 2.5rem;
-  margin-bottom: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .members-list {
@@ -34,7 +41,7 @@
 .member-card img {
   display: block;
   margin: 0 auto 15px;
-  border-radius: 15px; /* Rounded rectangle shape */
+  border-radius: 15px;
   width: 120px;
   height: 120px;
   object-fit: cover;
@@ -71,5 +78,3 @@
 .committee-row:last-child {
   border-bottom: none;
 }
-
-
