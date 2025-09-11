@@ -4,6 +4,9 @@ import Bankdetails from "./components/Bankdetails"
 import Header from "./components/Header"
 import Footer from "./components/Footer"   
 import Contact from "./components/Contact" 
+import AboutCollege from "./components/AboutCollege"
+import AboutConference from "./components/AboutConference"
+import AboutDepartment from "./components/AboutDepartment"
 import { useEffect } from "react"
 import Lenis from "lenis"
 import gsap from "gsap"
@@ -32,6 +35,9 @@ gsap.ticker.lagSmoothing(0);
   <Header/>
   
    <Home/>
+   <AboutCollege/>
+   <AboutDepartment/>
+   <AboutConference/>
    <Payment/>
    <Bankdetails/>
    {/*just for checking the display guys*/}
