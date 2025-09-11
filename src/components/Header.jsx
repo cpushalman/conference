@@ -9,24 +9,24 @@ const Header = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    
+    window.addEventListener("resize", checkMobile);
+
     return () => {
-      window.removeEventListener('resize', checkMobile);
+      window.removeEventListener("resize", checkMobile);
     };
   }, []);
 
   useEffect(() => {
     if (isOpen && isMobile) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
-    
+
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isOpen, isMobile]);
 
@@ -41,9 +41,10 @@ const Header = () => {
 
   const menuItems = [
     { id: "home", label: "Home" },
+    { id: "about", label: "About" },
     { id: "dates", label: "Important Dates" },
     { id: "registration", label: "Registration" },
-    { id: "venue", label: "Venue & Contact" }
+    { id: "venue", label: "Venue & Contact" },
   ];
 
   return (
@@ -54,7 +55,7 @@ const Header = () => {
           <div className="absolute top-1/4 right-10 w-6 h-6 bg-white opacity-5 rounded-full"></div>
           <div className="absolute bottom-0 left-1/3 w-10 h-10 bg-white opacity-15 rounded-full"></div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center relative z-10">
           <button
             className="md:hidden text-white flex items-center justify-center p-2 rounded-lg hover:bg-blue-800 transition-all duration-300 hover:scale-105"
@@ -83,10 +84,17 @@ const Header = () => {
         </div>
 
         {/* Mobile menu*/}
-        <div className={`md:hidden fixed inset-0 z-50 transition-all duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-          <div className={`absolute left-0 top-0 h-full w-64 bg-gradient-to-b from-blue-800 to-blue-900 shadow-2xl transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div
+          className={`md:hidden fixed inset-0 z-50 transition-all duration-300 ${
+            isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+          }`}
+        >
+          <div
+            className={`absolute left-0 top-0 h-full w-64 bg-gradient-to-b from-blue-800 to-blue-900 shadow-2xl transform transition-transform duration-300 ease-in-out ${
+              isOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
+          >
             <div className="p-5 h-full flex flex-col">
-
               <div className="flex items-center justify-between mb-6 pb-4 border-b border-blue-600">
                 <h2 className="text-white text-xl font-bold">Menu</h2>
                 <button
@@ -97,10 +105,13 @@ const Header = () => {
                   <X size={24} />
                 </button>
               </div>
-              
+
               <ul className="flex-1">
-                {menuItems.map((item, index) => (
-                  <li key={item.id} className="border-b border-blue-600 last:border-b-0">
+                {menuItems.map((item) => (
+                  <li
+                    key={item.id}
+                    className="border-b border-blue-600 last:border-b-0"
+                  >
                     <a
                       href={`#${item.id}`}
                       onClick={(e) => scrollToSection(e, item.id)}
@@ -113,7 +124,9 @@ const Header = () => {
               </ul>
 
               <div className="pt-4 mt-auto border-t border-blue-600">
-                <p className="text-blue-200 text-sm text-center">PSG College of Technology</p>
+                <p className="text-blue-200 text-sm text-center">
+                  PSG College of Technology
+                </p>
               </div>
             </div>
           </div>
@@ -123,33 +136,28 @@ const Header = () => {
       <div className="bg-gradient-to-b from-white to-blue-50 shadow-md py-6 px-6 md:px-12 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-40 h-40 -translate-x-20 -translate-y-20 bg-blue-100 rounded-full opacity-30"></div>
         <div className="absolute bottom-0 right-0 w-32 h-32 translate-x-16 translate-y-16 bg-blue-200 rounded-full opacity-20"></div>
-        
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center relative z-10">
 
-          <div className="flex items-center space-x-6 mb-4 md:mb-0">
-            <div className="relative group">
-              <div className="absolute -inset-2 bg-blue-200 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-              <img 
-                src="" 
-                alt="PSG College Logo" 
-                className="h-16 md:h-20 rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105 relative" 
-              />
-            </div>
-            <div className="relative group">
-              <div className="absolute -inset-2 bg-orange-200 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-              <img 
-                src="" 
-                alt="75 Years" 
-                className="h-16 md:h-20 rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105 relative" 
-              />
-            </div>
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10 gap-6 md:gap-12">
+          {/* Left logos */}
+          <div className="flex items-center gap-8">
+            <img
+              src="https://aiconsortium.psgtech.ac.in/aispectrum/assets/PSG_College_of_Technology_logo-CI0TCJV7.png"
+              alt="PSG College Logo"
+              className="h-16 md:h-20"
+            />
+            <img
+              src="https://aiconsortium.psgtech.ac.in/aispectrum/assets/platinumjubliee-dv9Rn9sG.png"
+              alt="75 Years"
+              className="h-16 md:h-20"
+            />
           </div>
 
-          <div className="text-center mb-4 md:mb-0 flex-1 md:mx-8">
+          {/* Title */}
+          <div className="text-center flex-1 md:mx-6 lg:mx-12">
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
               PSG COLLEGE OF TECHNOLOGY
             </h1>
-            <p className="text-sm md:text-base text-blue-700 mt-2 font-medium flex items-center justify-center">
+            <p className="text-sm md:text-base text-blue-700 mt-2 font-medium">
               Coimbatore, Tamil Nadu, India - 641004
             </p>
             <div className="mt-3 flex justify-center">
@@ -157,15 +165,13 @@ const Header = () => {
             </div>
           </div>
 
+          {/* Right logo */}
           <div className="flex items-center">
-            <div className="relative group">
-              <div className="absolute -inset-2 bg-blue-200 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-              <img 
-                src="" 
-                alt="100 Years of Excellence" 
-                className="h-16 md:h-20 rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105 relative" 
-              />
-            </div>
+            <img
+              src="https://aiconsortium.psgtech.ac.in/aispectrum/assets/centenaryyear-Bk9uJdws.png"
+              alt="100 Years of Excellence"
+              className="h-16 md:h-20"
+            />
           </div>
         </div>
       </div>

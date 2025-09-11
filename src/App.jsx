@@ -2,7 +2,8 @@ import Home from "./components/Home"
 import Payment from "./components/Payment"
 import Bankdetails from "./components/Bankdetails"
 import Header from "./components/Header"
-import Footer from "./components/Footer"    
+import Footer from "./components/Footer"   
+import Contact from "./components/Contact" 
 import { useEffect } from "react"
 import Lenis from "lenis"
 import gsap from "gsap"
@@ -36,8 +37,8 @@ gsap.ticker.lagSmoothing(0);
    {/*just for checking the display guys*/}
   
       <CommitteeList />
-    
 
+   <Contact/>
    <Footer/>
    </>
    
