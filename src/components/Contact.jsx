@@ -42,13 +42,23 @@ const Contact = () => {
             
             <div className="space-y-6">
               <div className="border-l-4 border-blue-500 pl-4 py-2">
-                <h4 className="font-semibold text-gray-800 text-xl">Name1</h4>
-                <a href="tel: no 1" className="text-blue-600 hover:underline transition-colors duration-200">No1</a>
+                <h4 className="font-semibold text-gray-800 text-xl">Dr.Saranya K G</h4>
+                <a href="tel:9003801743" className="text-blue-600 hover:underline transition-colors duration-200">9003801743</a>
               </div>
               
               <div className="border-l-4 border-blue-500 pl-4 py-2">
-                <h4 className="font-semibold text-gray-800 text-xl">Name2</h4>
-                <a href="tel: no 2" className="text-blue-600 hover:underline transition-colors duration-200">No2</a>
+                <h4 className="font-semibold text-gray-800 text-xl">Dr.R.Thirumahal</h4>
+                <a href="tel:9820938174" className="text-blue-600 hover:underline transition-colors duration-200">9820938174</a>
+              </div>
+
+              <div className="border-l-4 border-blue-500 pl-4 py-2">
+                <h4 className="font-semibold text-gray-800 text-xl">Dr.S.Vijayalakshmi</h4>
+                <a href="tel:9345624415" className="text-blue-600 hover:underline transition-colors duration-200">9345624415</a>
+              </div>
+
+              <div className="border-l-4 border-blue-500 pl-4 py-2">
+                <h4 className="font-semibold text-gray-800 text-xl">Dr.V.Santhi</h4>
+                <a href="tel:9842728113" className="text-blue-600 hover:underline transition-colors duration-200">9842728113</a>
               </div>
             </div>
           </div>
