@@ -7,7 +7,7 @@ const AboutCollege = () => {
       <div className="about-container">
         <div className="about-photo">
           <img
-            src="college photo.webp"
+            src="/images/College photo.webp"
           />
         </div>
 
