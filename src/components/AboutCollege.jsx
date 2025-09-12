@@ -1,13 +1,13 @@
 import React from "react";
 import "../components-css/About.css";
 
-const About = () => {
+const AboutCollege = () => {
   return (
-    <section className="about-section">
+    <section id= "about" className="about-section">
       <div className="about-container">
         <div className="about-photo">
           <img
-            src="college photo.png"
+            src="/images/College photo.webp"
           />
         </div>
 
@@ -42,4 +42,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutCollege;

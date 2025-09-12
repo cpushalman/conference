@@ -6,7 +6,7 @@ const AboutDepartment = () => {
     <section className="about-section">
       <div className="about-container">
         <div className="about-photo">
-          <img src="Department.jpeg" alt="Department" />
+          <img src="/images/Department.webp" alt="Department" />
         </div>
 
         <div className="about-content">
