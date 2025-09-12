@@ -4,7 +4,7 @@
     "name": "Dr. N. Rajesh Pillai",
     "designation": "Director, Scientific Analysis Group, DRDO",
     "university": "Ministry of Defense, Government of India",
-    "image": "/images/kesavasamy.jpg"
+    "image": "/images/rajeshpillai.jpg"
   },
   {
     "id": 2,
@@ -18,35 +18,35 @@
     "name":"Mr Chidambaran Kollengode", 
     "designation": "Senior Director",
     "university": " Engg at DataXu,Bangalore",
-    "image": "/images/kesavasamy.jpg"
+    "image": "/images/Chidambaran.jpg"
   },
   {
     "id": 4,
     "name":"Dr.N.Subramanian", 
     "designation": "Executive Director",
     "university": " Society for Electronics Transactions and Security India",
-    "image": "/images/kesavasamy.jpg"
+    "image": "/images/Subramanian.jpg"
   },
   {
     "id": 5,
     "name":"Dr Venkatesh Babu", 
     "designation": "Professor & Head",
     "university": " Department of Computational and Data Sciences,Indian Institute of Science Bangalore",
-    "image": "/images/kesavasamy.jpg"
+    "image": "/images/Venkatesh.jpg"
   },
   {
     "id": 6,
     "name":"Dr. Arun Rajkumar", 
     "designation": "Core Member",
     "university": " Department of Computer Science and Engineering, IIT Madras, Chennai",
-    "image": "/images/kesavasamy.jpg"
+    "image": "/images/ArunRajkumar.jpg"
   },
   {
     "id": 7,
     "name":"Dr. Sathishkumar S", 
     "designation": "Associate Professor",
     "university": " AI in AG and Natural Resources,University of Tennessee,United States of America",
-    "image": "/images/kesavasamy.jpg"
+    "image": "/images/Sathishkumar.jpg"
   }
   
   
