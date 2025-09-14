@@ -38,11 +38,12 @@ gsap.ticker.lagSmoothing(0);
    <AboutCollege/>
    <AboutDepartment/>
    <AboutConference/>
+   <CommitteeList />
    <Payment/>
    <Bankdetails/>
    {/*just for checking the display guys*/}
   
-      <CommitteeList />
+      
 
    <Contact/>
    <Footer/>
