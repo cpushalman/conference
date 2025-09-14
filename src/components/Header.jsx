@@ -49,6 +49,7 @@ const Header = () => {
 
   return (
     <header className="font-sans">
+      {/* Navbar */}
       <nav className="bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900 py-3 shadow-lg relative">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-4 -left-4 w-8 h-8 bg-white opacity-10 rounded-full"></div>
@@ -56,7 +57,7 @@ const Header = () => {
           <div className="absolute bottom-0 left-1/3 w-10 h-10 bg-white opacity-15 rounded-full"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center relative z-10">
+        <div className="max-w-7xl mx-auto px-6 flex items-center justify-center relative z-10">
           <button
             className="md:hidden text-white flex items-center justify-center p-2 rounded-lg hover:bg-blue-800 transition-all duration-300 hover:scale-105"
             onClick={() => setIsOpen(!isOpen)}
@@ -65,7 +66,7 @@ const Header = () => {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          <ul className="hidden md:flex justify-center flex-1 space-x-8 text-white text-lg font-medium">
+          <ul className="hidden md:flex  justify-center flex-1 space-x-8 text-white text-lg font-medium">
             {menuItems.map((item) => (
               <li key={item.id}>
                 <a
@@ -83,7 +84,7 @@ const Header = () => {
           <div className="md:hidden w-10"></div>
         </div>
 
-        {/* Mobile menu*/}
+        {/* Mobile menu */}
         <div
           className={`md:hidden fixed inset-0 z-50 transition-all duration-300 ${
             isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
@@ -133,21 +134,22 @@ const Header = () => {
         </div>
       </nav>
 
+      {/* Title + Logos */}
       <div className="bg-gradient-to-b from-white to-blue-50 shadow-md py-6 px-6 md:px-12 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-40 h-40 -translate-x-20 -translate-y-20 bg-blue-100 rounded-full opacity-30"></div>
         <div className="absolute bottom-0 right-0 w-32 h-32 translate-x-16 translate-y-16 bg-blue-200 rounded-full opacity-20"></div>
 
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10 gap-6 md:gap-12">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center relative z-10 gap-6 md:gap-12">
           {/* Left logos */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-18 basis-1/4 justify-center">
             <img
-              src="https://aiconsortium.psgtech.ac.in/aispectrum/assets/PSG_College_of_Technology_logo-CI0TCJV7.png"
-              alt="PSG College Logo"
+              src="/images/75yearsLogo.png"
+              alt="75 Years"
               className="h-16 md:h-20"
             />
             <img
-              src="https://aiconsortium.psgtech.ac.in/aispectrum/assets/platinumjubliee-dv9Rn9sG.png"
-              alt="75 Years"
+              src="/images/PsgLogo.webp"
+              alt="PSG College Logo"
               className="h-16 md:h-20"
             />
           </div>
@@ -157,7 +159,10 @@ const Header = () => {
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
               PSG COLLEGE OF TECHNOLOGY
             </h1>
-            <p className="text-sm md:text-base text-blue-700 mt-2 font-medium">
+            <h2 className="text-base sm:text-lg md:text-xl font-semibold text-blue-700 mt-1 whitespace-nowrap">
+              Department of Computer Science and Engineering
+            </h2>
+            <p className="text-sm md:text-base text-gray-900 font-bold mt-2">
               Coimbatore, Tamil Nadu, India - 641004
             </p>
             <div className="mt-3 flex justify-center">
@@ -165,10 +170,15 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Right logo */}
-          <div className="flex items-center">
+          {/* Right logos */}
+          <div className="flex items-center gap-8 basis-1/4 justify-center">
             <img
-              src="https://aiconsortium.psgtech.ac.in/aispectrum/assets/centenaryyear-Bk9uJdws.png"
+              src="/images/oldPsgLogo.png"
+              alt="PSG Logo"
+              className="h-16 md:h-20"
+            />
+            <img
+              src="/images/100YearsLogo.jpeg"
               alt="100 Years of Excellence"
               className="h-16 md:h-20"
             />
