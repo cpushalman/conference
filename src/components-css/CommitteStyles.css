@@ -43,7 +43,7 @@ h1 {
   margin: 0 auto 15px;
   border-radius: 15px;
   width: 120px;
-  height: 120px;
+  height: 150px;
   object-fit: cover;
   border: 3px solid #007BFF;
 }
@@ -78,3 +78,73 @@ h1 {
 .committee-row:last-child {
   border-bottom: none;
 }
+img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 150px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #007BFF;
+}
+
+.program-hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-role {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
+  padding: 30px 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.main-role h3 {
+  color: #007BFF;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.organizing-secretaries {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
+}
+
+.secretaries-heading {
+  text-align: center;
+  color: #007BFF;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.secretary-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+}
+
+.hierarchy-card h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hierarchy-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+
