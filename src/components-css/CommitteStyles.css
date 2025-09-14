@@ -78,7 +78,8 @@ body {
 .committee-row:last-child {
   border-bottom: none;
 }
-img {
+
+.container img {
   display: block;
   margin: 0 auto 15px;
   width: 150px;
