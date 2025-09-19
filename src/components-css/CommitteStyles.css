@@ -11,7 +11,7 @@ body {
   margin: auto;
 }
 
-h1 {
+.container h1 {
   text-align: center;
   color: #0056b3;
   font-size: 2.5rem;
@@ -78,7 +78,8 @@ h1 {
 .committee-row:last-child {
   border-bottom: none;
 }
-img {
+
+.container img {
   display: block;
   margin: 0 auto 15px;
   width: 150px;
