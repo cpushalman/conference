@@ -40,5 +40,12 @@
     "designation": "Professor, President, ACM India Council",
     "university": "Department of Computer Science & Engineering, IIIT – Bangalore, ACM India",
     "image": "/images/meenakshidsouza.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Dr Srinivas Padmanabhuni",
+    "designation": "AI Advisory , Marax AI & Faculty",
+    "university": " IIIT – Lucknow",
+    "image": "/images/srinivas.jpg"
   }
 ]
