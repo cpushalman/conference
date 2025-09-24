@@ -86,7 +86,7 @@ const importantDates = [
         </section>
 
         {/* Registration Fees Section */}
-        <section id="registration">
+        <section id="registration"><br /> <br />
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-blue-600 mb-4">
               The registration fee for the conference is as follows:
