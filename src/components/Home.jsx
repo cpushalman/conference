@@ -87,17 +87,25 @@ export default function Home() {
                   alt="Crompton Greaves"
                 />
               </div>
-              <div className="flex items-center justify-center mx-8">
-                <img
-                  src="./logos/ibm.png"
-                  className="h-12 sm:h-16 md:h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                  alt="IBM"
-                />
-              </div>
+         
               <div className="flex items-center justify-center mx-8">
                 <img
                   src="./logos/saps.png"
                   className="h-12 sm:h-16 md:h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  alt="SAP"
+                />
+              </div>
+                <div className="flex items-center justify-center mx-8">
+                <img
+                  src="./logos/crompton.png"
+                  className="h-12 sm:h-16 md:h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  alt="SAP"
+                />
+              </div>
+               <div className="flex items-center justify-center mx-8">
+                <img
+                  src="./logos/qualcomm.png"
+                  className="h-10 sm:h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
                   alt="SAP"
                 />
               </div>
