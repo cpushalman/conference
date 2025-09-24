@@ -111,6 +111,27 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center mx-8">
                 <img
+                  src="./logos/acm.png"
+                  className="h-12 sm:h-16 md:h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  alt="TCS"
+                />
+              </div>
+               <div className="flex items-center justify-center mx-8">
+                <img
+                  src="./logos/iete.png"
+                  className="h-12 sm:h-16 md:h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  alt="TCS"
+                />
+              </div>
+               <div className="flex items-center justify-center mx-8">
+                <img
+                  src="./logos/bosch.png"
+                  className="h-12 sm:h-12 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  alt="TCS"
+                />
+              </div>
+              <div className="flex items-center justify-center mx-8">
+                <img
                   src="./logos/tcs.png"
                   className="h-12 sm:h-16 md:h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
                   alt="TCS"
