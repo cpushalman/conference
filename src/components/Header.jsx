@@ -50,23 +50,24 @@ const Header = () => {
   return (
     <header className="font-sans">
       {/* Navbar */}
-      <nav className="bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900 py-3 shadow-lg relative">
+      <nav className="bg-gradient-to-r from-blue-800 via-blue-700 to-blue-900 py-2 md:py-3 shadow-lg relative">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-4 -left-4 w-8 h-8 bg-white opacity-10 rounded-full"></div>
           <div className="absolute top-1/4 right-10 w-6 h-6 bg-white opacity-5 rounded-full"></div>
           <div className="absolute bottom-0 left-1/3 w-10 h-10 bg-white opacity-15 rounded-full"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-center relative z-10">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between relative z-10">
+          {/* Menu button */}
           <button
-            className="md:hidden text-white flex items-center justify-center p-2 rounded-lg hover:bg-blue-800 transition-all duration-300 hover:scale-105"
+            className="md:hidden text-white flex items-center justify-center p-2 rounded-lg hover:bg-blue-800 transition-all duration-300"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
 
-          <ul className="hidden md:flex  justify-center flex-1 space-x-8 text-white text-lg font-medium">
+          <ul className="hidden md:flex justify-center flex-1 space-x-8 text-white text-lg font-medium">
             {menuItems.map((item) => (
               <li key={item.id}>
                 <a
@@ -81,7 +82,9 @@ const Header = () => {
             ))}
           </ul>
 
-          <div className="md:hidden w-10"></div>
+          <div className="md:hidden invisible">
+            <Menu size={20} />
+          </div>
         </div>
 
         {/* Mobile menu */}
@@ -135,52 +138,52 @@ const Header = () => {
       </nav>
 
       {/* Title + Logos */}
-      <div className="bg-gradient-to-b from-white to-blue-50 shadow-md py-6 px-6 md:px-12 relative overflow-hidden">
+      <div className="bg-gradient-to-b from-white to-blue-50 shadow-md py-4 md:py-6 px-4 md:px-12 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-40 h-40 -translate-x-20 -translate-y-20 bg-blue-100 rounded-full opacity-30"></div>
         <div className="absolute bottom-0 right-0 w-32 h-32 translate-x-16 translate-y-16 bg-blue-200 rounded-full opacity-20"></div>
 
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center relative z-10 gap-6 md:gap-12">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center relative z-10 gap-4 md:gap-12">
           {/* Left logos */}
-          <div className="flex items-center gap-18 basis-1/4 justify-center">
+          <div className="flex items-center gap-6 md:gap-18 basis-1/4 justify-center">
             <img
               src="/images/75yearsLogo.png"
               alt="75 Years"
-              className="h-16 md:h-20"
+              className="h-14 md:h-20"
             />
             <img
               src="/images/PsgLogo.webp"
               alt="PSG College Logo"
-              className="h-16 md:h-20"
+              className="h-14 md:h-20"
             />
           </div>
 
           {/* Title */}
           <div className="text-center flex-1 md:mx-6 lg:mx-12">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
+            <h1 className="text-xl md:text-3xl font-bold text-gray-900 tracking-tight leading-snug">
               PSG COLLEGE OF TECHNOLOGY
             </h1>
-            <h2 className="text-base sm:text-lg md:text-xl font-semibold text-blue-700 mt-1 whitespace-nowrap">
+            <h2 className="text-sm md:text-xl font-semibold text-blue-700 mt-1 whitespace-nowrap leading-tight">
               Department of Computer Science and Engineering
             </h2>
-            <p className="text-sm md:text-base text-gray-900 font-bold mt-2">
+            <p className="text-xs md:text-base text-gray-900 font-medium mt-1 md:mt-2 leading-tight">
               Coimbatore, Tamil Nadu, India - 641004
             </p>
-            <div className="mt-3 flex justify-center">
-              <div className="h-1 w-16 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full transform transition-all duration-500 hover:scale-125"></div>
+            <div className="mt-2 md:mt-3 flex justify-center">
+              <div className="h-1 w-12 md:w-16 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full transform transition-all duration-500 hover:scale-110"></div>
             </div>
           </div>
 
           {/* Right logos */}
-          <div className="flex items-center gap-8 basis-1/4 justify-center">
+          <div className="flex items-center gap-6 md:gap-8 basis-1/4 justify-center">
             <img
               src="/images/oldPsgLogo.png"
               alt="PSG Logo"
-              className="h-16 md:h-20"
+              className="h-14 md:h-20"
             />
             <img
               src="/images/100YearsLogo.jpeg"
               alt="100 Years of Excellence"
-              className="h-16 md:h-20"
+              className="h-14 md:h-20"
             />
           </div>
         </div>
